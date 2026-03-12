@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nautilus Marine Electronics</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fa;
+      color: #1f2a36;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(8, 25, 42, 0.82), rgba(8, 25, 42, 0.82)),
+        url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+      color: white;
+      padding: 90px 20px 80px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      opacity: 0.9;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 48px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #1e90ff;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1677d6;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 14px;
+      color: #0d2238;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 40px;
+      color: #5c6b78;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #0d2238;
+      font-size: 21px;
+    }
+
+    .highlight-section {
+      background: #0d2238;
+      color: white;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .highlight-box {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .highlight-number {
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #7fc4ff;
+    }
+
+    .about-text {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #42515f;
+    }
+
+    .service-area {
+      text-align: center;
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .footer {
+      background: #08192a;
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 36px 20px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Certified • Licensed • Insured • Mobile Service</div>
+      <h1>Professional Marine Electronics Installation You Can Trust</h1>
+      <p>
+        Nautilus Marine Electronics provides certified installation, networking, and mobile service
+        for today’s leading marine electronics systems throughout the Jersey Shore.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://cal.com/ryan-britt-zv8brf">Book a Consultation</a>
+        <a class="btn btn-secondary" href="tel:7325551234">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Why Boat Owners Choose Nautilus</h2>
+      <p class="section-subtitle">
+        Backed by marine industry experience, hands-on vessel knowledge, and top-tier installer certifications.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Certified Expertise</h3>
+          <p>
+            Holds both basic and advanced NMEA 2000 certifications, NMEA marine electronics installer certification,
+            Airmar transducer certification, and Garmin installer certification.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Trusted Brands</h3>
+          <p>
+            Authorized retailer for every major marine electronics brand, with experience installing and integrating
+            leading systems across a wide range of vessels.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Mobile Dockside Service</h3>
+          <p>
+            Fully licensed, insured, and mobile, providing professional service directly at your marina, dock,
+            or vessel location.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Real On-Water Experience</h3>
+          <p>
+            Marine background spans 15 years, including SUNY Maritime study, commercial vessel and tugboat experience,
+            offshore fishing, and practical boat handling knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight-section">
+    <div class="container">
+      <h2 class="section-title" style="color:white;">Credentials That Matter</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.82);">
+        Customers are trusting you with expensive systems and critical vessel functionality. Credentials help them feel confident.
+      </p>
+
+      <div class="highlight-grid">
+        <div class="highlight-box">
+          <div class="highlight-number">8+</div>
+          <div>Years in marine electronics</div>
+        </div>
+        <div class="highlight-box">
+          <div class="highlight-number">15+</div>
+          <div>Years in the marine industry</div>
+        </div>
+        <div class="highlight-box">
+          <div class="highlight-number">150+</div>
+          <div>Sea days on commercial vessels and tugboats</div>
+        </div>
+        <div class="highlight-box">
+          <div class="highlight-number">100T</div>
+          <div>U.S. Coast Guard license with STCW security and radar endorsements</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">
+        Installation, upgrades, networking, and system integration for modern marine electronics.
+      </p>
+
+      <div class="grid">
+        <div class="card"><h3>Chartplotter Installation</h3><p>Clean, professional installs for new units, helm upgrades, and system replacements.</p></div>
+        <div class="card"><h3>Sonar & Transducers</h3><p>Transducer selection, mounting, setup, and integration for reliable performance.</p></div>
+        <div class="card"><h3>Radar Systems</h3><p>Installation and commissioning for safer navigation and better situational awareness.</p></div>
+        <div class="card"><h3>NMEA 2000 Networking</h3><p>Backbone design, troubleshooting, expansion, and proper system integration.</p></div>
+        <div class="card"><h3>System Upgrades</h3><p>Modernize outdated electronics and improve connectivity across onboard systems.</p></div>
+        <div class="card"><h3>Dockside Consultation</h3><p>Get expert guidance before purchasing or upgrading your electronics package.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Service Area</h2>
+      <div class="service-area">
+        <p style="font-size:20px; margin-top:0;">
+          Currently offering mobile service between <strong>Beach Haven</strong> and <strong>Sandy Hook</strong>.
+        </p>
+        <p style="margin-bottom:0; color:#5c6b78;">
+          Dockside and marina-based appointments available throughout the region.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px;">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title">Ready to Schedule?</h2>
+      <p class="section-subtitle">
+        Book a consultation to discuss your boat, your electronics package, and the work you need done.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://cal.com/YOURUSERNAME">Book a Consultation</a>
+        <a class="btn btn-secondary" style="color:#0d2238; border-color:#0d2238;" href="tel:1234567890">Call or Text</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Nautilus Marine Electronics • Certified Installation • Mobile Marine Service
+  </footer>
+
+</body>
+</html>
